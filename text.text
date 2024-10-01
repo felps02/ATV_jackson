@@ -1,0 +1,50 @@
+No indicador 3. Descreve as estruturas de POO, que tem como critério a Análise, o objetivo é proporcionar a solidificação da Programação Orientada a Objetos, permitindo ao estudante o conhecimento dos conceitos e práticas de POO, bem como selecioná-los para aplicações reais e utilizações do dia a dia.
+
+Para analisar o aprendizado, desenvolva um mini sistema de cursos, que possui como entidades:
+* **Professor**
+    - `int`: Identificador Único (ID)
+    - `String`: Nome
+    - `String`: Departamento
+* **Curso**
+    - `int`: Identificador Único (ID)
+    - `String`: Nome
+    - `int`: Carga Horária
+    - `Professor`: Professor (1-N)
+* **Aluno**
+    - `int`: Identificador Único (ID)
+    - `String`: Nome
+    - `String`: Data de Nascimento
+    - `String`: C.P.F.
+    - `Curso`: Curso (1-N)
+
+Cada arquivo fonte de objeto deverá conter as suas propriedades e deverá respeitar os relacionamentos existentes entre si:
+* Professor possui relacionamento 1-N com Curso
+* Curso possui relacionamento 1-N com Aluno
+
+Deverá ser criado um arquivo principal para gerenciamento das informações dos objetos, este arquivo deverá ser estruturado com um menu com as seguintes opções:
+* 1 - Cadastrar Professor
+* 2 - Cadastrar Curso
+* 3 - Cadastrar Aluno
+* 4 - Listar Professores
+* 5 - Listar Cursos
+* 6 - Listar Alunos
+
+Ao selecionar as opções de cadastro, deverão ser solicitadas as informações necessárias para registro de cada entidade via terminal, criando ao final o objeto.
+
+Os objetos deverão ser gerenciados simulando um banco de dados com ArrayList, ou seja, as impressões deverão ser geradas e gerenciadas por `forEach`.
+
+Na listagem de Cursos, deverá ser impresso o nome do Curso, a Carga Horária e o nome do Professor.
+
+Na listagem de Alunos, deverá ser impresso o nome do Aluno, a Data de Nascimento, o C.P.F. e o nome do Curso.
+
+Na listagem de Professores, deverá ser impresso o nome do Professor e o Departamento e todos os cursos no qual ele está associado, com a respectiva quantidade de alunos.
+
+Pontos importantes:
+* Comentários de Código demonstrando a estrutura;
+* Indentação de Código;
+* Aplicação de camelCase e PascalCase para o código fonte;
+* Nomenclatura de variáveis que determinem sua utilização;
+* Separação de responsabilidades em cada classe. Serão avaliados se os métodos estão realizando a sua responsabilidade.
+* Utilização de try-catch para tratamento de exceções;
+
+O código fonte deverá ser trabalhando dentro do GitHub, sendo sincronizado e aberto PR ao final do desenvolvimento.
